@@ -9,22 +9,22 @@
 import UIKit
 
 class Button: UIButton {
+    var x: Int!
+    var y: Int!
     
-    static var x: Int!
-    static var y: Int!
-    
-    static func getX() -> Int {
+    public func getX() -> Int {
         return x
     } //end getX
-    static func getY() -> Int {
+    
+    public func getY() -> Int {
         return y
     } //end getY
-    static func setX(x: Int) {
+    
+    public func setX(x: Int) {
         self.x = x
     }//end setX
-    static func setY(y: Int) {
+    
+    public func setY(y: Int) {
         self.y = y
     }//end setY
-    
-    
-} //end class Button()
+}

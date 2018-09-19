@@ -352,6 +352,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81k-L4-LsA">
                                         <rect key="frame" x="126.5" y="362" width="47" height="166"/>
                                         <state key="normal" title="START"/>
+                                        <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suW-JP-s5f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

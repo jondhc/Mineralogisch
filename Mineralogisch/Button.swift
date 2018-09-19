@@ -6,4 +6,18 @@
 //  Copyright © 2018 Jonathan Herrejón. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Button: UIButton {
+    
+    static var x: Int!
+    static var y: Int!
+    
+    static func getX() -> Int{
+        return x
+    } //end getX
+    static func getY() -> Int{
+        return y
+    } //end getY
+    
+} //end Button

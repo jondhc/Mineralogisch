@@ -35,6 +35,24 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction botonTablero(_ sender: UIButton) {
+        var a,b : Int
+    
+        a = getX()
+        b = getY()
+    
+        if tablero[a][b] == 9 {
+            print("Perdiste")
+        }
+        else if tablero[a][b] == 0 {
+            //funcion recursiva
+        }
+        else {
+            print("\(tablero[a][b])")
+        }
+    
+    }
+    
     override func viewDidLoad() {
         var a = 0
         var b = 0

@@ -55,6 +55,42 @@ class ViewController: UIViewController {
                 } //end else
     } //end boardbutton
     
+    func eliminarCeros(x: Int, y: Int)->Void{
+        for i in x-1...x+1{
+            for j in y-1...y+1{
+                if i>=0 && j>=0 && i<6 && j<6 && (i != x || j != y){
+                    if tablero[i][j] >= 0 && tablero[i][j] < 9 {
+                        //Deshabilitar boton
+                        if tablero[i][j] == 0 {
+                            //El boton tendra texto vacio
+                        }
+                        else {
+                            //El boton tendra su correspondiente numero
+                        }
+                    }
+                    if tablero[i][j] == 0 {
+                        eliminarCeros(x: i,y: j)
+                    }
+                }
+            }
+        }
+    }
+    
+    func checarGanar() -> Bool {
+        var contador: Int = 0
+        for i in buttons{
+            if (i.isEnabled){
+                contador = contador + 1
+            } //end if
+        } //end for
+        if contador == 3  {
+            return true
+        }else {
+            return false
+        }
+        
+    }
+    
     override func viewDidLoad() {
         var a = 0
         var b = 0
@@ -78,7 +114,7 @@ class ViewController: UIViewController {
             print(i.getY())
         }
         
-    } //end viiewDidLoad
+    } //end viewDidLoad
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

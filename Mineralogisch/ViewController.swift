@@ -12,11 +12,15 @@ class ViewController: UIViewController {
     var tablero: [[Int]] = Array(repeating: Array(repeating: 0, count: 6), count: 6)
     var filaAleatoria: Int!
     var coluAleatoria: Int!
-
+    var contador: Int! = 0
+    
+    @IBOutlet weak var pointsLabel: UILabel!
     @IBOutlet var buttons: [Button]!
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBAction func startButton(_: UIButton) {
+        contador = 0
+        pointsLabel.text = "Points: \(contador!)"
         for i in 0...5{
             for j in 0...5{
                 tablero[i][j] = 0
@@ -67,10 +71,14 @@ class ViewController: UIViewController {
             } //end for
         } //end if
         else if tablero[a][b] == 0 {
+            contador = contador+1
+            pointsLabel.text = "Points: \(contador!)"
             //eliminarCeros(x: a, y: b, button: sender)
         } //end else if
         else {
             print("\(tablero[a][b])")
+            contador = contador+1
+            pointsLabel.text = "Points: \(contador!)"
         } // end else
     } // end boardbutton
 

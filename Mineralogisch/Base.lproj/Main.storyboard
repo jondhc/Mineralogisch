@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,40 +45,58 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="p0r-XL-Q9Z">
-                                        <rect key="frame" x="54" y="81" width="192" height="191"/>
+                                        <rect key="frame" x="55" y="81" width="190" height="190"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="xhn-fF-RQl">
-                                                <rect key="frame" x="0.0" y="0.0" width="192" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-qb-cb6" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebl-0X-HtK"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-W4-H2f" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="32.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yhS-AU-voa"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-Qf-0qJ" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="64.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9M9-aG-PBW"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-xS-DYa" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="97" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1I-KK-jVs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-sh-GTO" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryW-iJ-eSi"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utg-qx-QVo" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="161.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxl-yc-ofS"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -95,37 +113,55 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MPq-be-GW0">
-                                                <rect key="frame" x="0.0" y="32" width="192" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="32" width="190" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-tF-EBw" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0MB-Ai-I9S"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skD-lv-xHi" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="32.5" y="0.0" width="30" height="30.5"/>
+                                                        <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axt-fL-xsd"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-ym-lkQ" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="64.5" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVj-mE-cFj"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-z6-nwj" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="97" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOO-Ik-5Ie"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRp-jR-azf" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="0.0" width="30" height="30.5"/>
+                                                        <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI0-wI-Ogd"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2r-cX-RU0" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="161.5" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBs-QQ-Edy"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -142,37 +178,55 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GIH-hY-Uug">
-                                                <rect key="frame" x="0.0" y="64.5" width="192" height="30"/>
+                                                <rect key="frame" x="0.0" y="64" width="190" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G8-On-xEv" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcw-Af-WUG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGi-Lq-f7E" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="32.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Upg-Pz-fuc"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-al-Nz5" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="64.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNc-eX-9wt"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uam-oY-3yY" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="97" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XE3-hY-fHy"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-it-YEe" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCB-tE-UWE"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-Sx-2DD" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="161.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0J-W8-Cb0"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -189,37 +243,55 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="o4h-ou-bhI">
-                                                <rect key="frame" x="0.0" y="96.5" width="192" height="30"/>
+                                                <rect key="frame" x="0.0" y="96" width="190" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-hD-Bak" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovA-7S-eJA"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mel-ys-OET" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="32.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmX-vv-buM"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRG-if-gcG" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="64.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hp-Fy-hNH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-dK-xBH" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="97" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2T-ks-oDn"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i7-Lh-8xh" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pt8-a0-FSl"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMb-Bt-wl5" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="161.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXG-bx-5JZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -236,37 +308,55 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Bz9-Ig-OvS">
-                                                <rect key="frame" x="0.0" y="128.5" width="192" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="128" width="190" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-J3-hrv" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOv-S0-KYe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYr-L9-1li" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="32.5" y="0.0" width="30" height="30.5"/>
+                                                        <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLZ-m3-gJj"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ri-zQ-m4d" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="64.5" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOQ-0A-Lte"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-ns-11i" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="97" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEr-f2-3cz"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5y-hO-RMm" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="0.0" width="30" height="30.5"/>
+                                                        <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGi-lV-pN6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTb-Ic-heD" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="161.5" y="0.0" width="30.5" height="30.5"/>
+                                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltz-KP-f5j"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -283,37 +373,55 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PBM-8k-Sbg">
-                                                <rect key="frame" x="0.0" y="161" width="192" height="30"/>
+                                                <rect key="frame" x="0.0" y="160" width="190" height="30"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-Bk-H1V" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6R-DQ-rnp"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTe-rE-Ll1" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="32.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0U4-rR-Iqj"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cp-af-lV3" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="64.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Juy-lh-TeV"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncI-VG-AfM" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="97" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLU-0N-yJs"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84z-06-irq" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="129.5" y="0.0" width="30" height="30"/>
+                                                        <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y6V-QX-d5e"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDX-d8-iyG" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
-                                                        <rect key="frame" x="161.5" y="0.0" width="30.5" height="30"/>
+                                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <state key="normal" title="-"/>
+                                                        <connections>
+                                                            <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deu-rb-OyU"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -344,13 +452,13 @@
                                         </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Eq-js-afH">
-                                        <rect key="frame" x="125" y="292" width="50" height="50"/>
+                                        <rect key="frame" x="125" y="291" width="50" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81k-L4-LsA">
-                                        <rect key="frame" x="126.5" y="362" width="47" height="166"/>
+                                        <rect key="frame" x="126.5" y="361" width="47" height="167"/>
                                         <state key="normal" title="START"/>
                                         <connections>
                                             <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suW-JP-s5f"/>

@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBAction func startButton(_: UIButton) {
+        for i in buttons{
+            i.setTitleColor(UIColor.blue, for: UIControlState.normal)
+        }
         contador = 0
         pointsLabel.text = "Points: \(contador!)"
         for i in 0...5{
@@ -51,6 +54,7 @@ class ViewController: UIViewController {
     } // startButton
 
     @IBAction func boardButton(_ sender: Button) {
+        sender.isEnabled=false
         var a, b: Int
 
         a = sender.getX()
@@ -59,9 +63,8 @@ class ViewController: UIViewController {
         print(a, b)
         print(tablero[a][b])
         sender.setTitle(("\(tablero[a][b])"), for: UIControlState.normal)
+        sender.setTitleColor(UIColor.black, for: UIControlState.normal)
         if tablero[a][b] == 9 {
-            print("Perdiste")
-            sender.setTitle("💣", for: UIControlState.normal)
             statusLabel.text = "LOSER!"
             for i in buttons{
                 i.isEnabled = false
@@ -73,12 +76,30 @@ class ViewController: UIViewController {
         else if tablero[a][b] == 0 {
             contador = contador+1
             pointsLabel.text = "Points: \(contador!)"
+            if contador == 32{
+                statusLabel.text = "WINNER!"
+                for i in buttons{
+                    i.isEnabled = false
+                    if(tablero[i.getX()][i.getY()] == 9){
+                        i.setTitle("💣", for: UIControlState.normal)
+                    } //end if
+                } //end for
+            } //end if
             //eliminarCeros(x: a, y: b, button: sender)
         } //end else if
         else {
             print("\(tablero[a][b])")
             contador = contador+1
             pointsLabel.text = "Points: \(contador!)"
+            if contador == 32{
+                statusLabel.text = "WINNER!"
+                for i in buttons{
+                    i.isEnabled = false
+                    if(tablero[i.getX()][i.getY()] == 9){
+                        i.setTitle("💣", for: UIControlState.normal)
+                    } //end if
+                } //end for
+            } //end if
         } // end else
     } // end boardbutton
 

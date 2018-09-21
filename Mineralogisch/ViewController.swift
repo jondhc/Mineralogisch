@@ -48,7 +48,7 @@ class ViewController: UIViewController {
 
         print(a, b)
         print(tablero[a][b])
-
+        sender.setTitle(("\(tablero[a][b])"), for: UIControlState.normal)
         if tablero[a][b] == 9 {
             print("Perdiste")
             sender.setTitle("💣", for: UIControlState.normal)

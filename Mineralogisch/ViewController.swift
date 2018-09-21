@@ -13,12 +13,53 @@ class ViewController: UIViewController {
     var filaAleatoria: Int!
     var coluAleatoria: Int!
     var contador: Int! = 0
+    var seconds = 0
+    var resumeTapped = false
+    
+    var time = Timer()
+    var isTimerRunning = false
     
     @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet weak var timer: UILabel!
     @IBOutlet var buttons: [Button]!
     @IBOutlet weak var statusLabel: UILabel!
     
+    func pause (){
+        if self.resumeTapped == false{
+            time.invalidate()
+            self.resumeTapped = true
+        }
+        else{
+            runTimer()
+            self.resumeTapped = false
+        }
+    }
+    
+    func timeString (time: TimeInterval) -> String {
+        let hours = Int(time)/3600
+        let minutes = Int(time)/60%60
+        let seconds = Int(time)%60
+        return String (format: "%02i:%02i:%02i", hours,minutes,seconds)
+    }
+    
+    func runTimer() {
+        time = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
+    }
+    
+    @objc func updateTimer() {
+        seconds = seconds+1
+        timer.text = "Time: \(timeString(time: TimeInterval(seconds)))"
+    }
+    
+    func resetTimer () {
+        time.invalidate()
+        seconds = 0
+        timer.text = "Time: \(timeString(time: TimeInterval(seconds)))"
+    }
+    
     @IBAction func startButton(_: UIButton) {
+        resetTimer()
+        runTimer()
         for i in buttons{
             i.setTitleColor(UIColor.blue, for: UIControlState.normal)
         }
@@ -50,7 +91,6 @@ class ViewController: UIViewController {
                 } //end for
             } //end for
         } // end for
-        print(tablero)
     } // startButton
 
     @IBAction func boardButton(_ sender: Button) {
@@ -66,6 +106,7 @@ class ViewController: UIViewController {
         sender.setTitleColor(UIColor.black, for: UIControlState.normal)
         if tablero[a][b] == 9 {
             statusLabel.text = "LOSER!"
+            pause()
             for i in buttons{
                 i.isEnabled = false
                 if(tablero[i.getX()][i.getY()] == 9){
@@ -78,6 +119,7 @@ class ViewController: UIViewController {
             pointsLabel.text = "Points: \(contador!)"
             if contador == 32{
                 statusLabel.text = "WINNER!"
+                pause()
                 for i in buttons{
                     i.isEnabled = false
                     if(tablero[i.getX()][i.getY()] == 9){
@@ -93,6 +135,7 @@ class ViewController: UIViewController {
             pointsLabel.text = "Points: \(contador!)"
             if contador == 32{
                 statusLabel.text = "WINNER!"
+                pause()
                 for i in buttons{
                     i.isEnabled = false
                     if(tablero[i.getX()][i.getY()] == 9){

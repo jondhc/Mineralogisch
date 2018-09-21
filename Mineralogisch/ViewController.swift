@@ -14,8 +14,14 @@ class ViewController: UIViewController {
     var coluAleatoria: Int!
 
     @IBOutlet var buttons: [Button]!
-
+    @IBOutlet weak var statusLabel: UILabel!
+    
     @IBAction func startButton(_: UIButton) {
+        statusLabel.text=""
+        for i in buttons{
+            i.isEnabled = true
+            i.setTitle("-", for: UIControlState.normal)
+        }
         for _ in 0 ... 3 { // Numero de minas
             repeat {
                 filaAleatoria = Int(arc4random_uniform(5))
@@ -45,30 +51,38 @@ class ViewController: UIViewController {
 
         if tablero[a][b] == 9 {
             print("Perdiste")
+            sender.setTitle("💣", for: UIControlState.normal)
+            statusLabel.text = "LOSER!"
+            for i in buttons{
+                i.isEnabled = false
+                if(tablero[i.getX()][i.getY()] == 9){
+                    i.setTitle("💣", for: UIControlState.normal)
+                } //end if
+            } //end for
         } //end if
         else if tablero[a][b] == 0 {
-            // funcion recursiva
+            //eliminarCeros(x: a, y: b, button: sender)
         } //end else if
         else {
             print("\(tablero[a][b])")
         } // end else
     } // end boardbutton
 
-    func eliminarCeros(x: Int, y: Int) {
+    func eliminarCeros(x: Int, y: Int, button: Button) {
         for i in x - 1 ... x + 1 {
             for j in y - 1 ... y + 1 {
                 if i >= 0 && j >= 0 && i < 6 && j < 6 && (i != x || j != y) {
                     if tablero[i][j] >= 0 && tablero[i][j] < 9 {
-                        // Deshabilitar boton
+                        button.isEnabled = false
                         if tablero[i][j] == 0 {
-                            // El boton tendra texto vacio
+                            //button.setTitle("", for: UIControlState.normal)
                         } //end if
                         else {
                             // El boton tendra su correspondiente numero
                         } //end else
                     } //end if
                     if tablero[i][j] == 0 {
-                        eliminarCeros(x: i, y: j)
+                        eliminarCeros(x: i, y: j, button: button)
                     } //end if
                 } //end if
             } //end for
@@ -95,6 +109,7 @@ class ViewController: UIViewController {
         var b = 0
 
         super.viewDidLoad()
+        statusLabel.text="Press the start button"
 
         for i in buttons {
             i.setX(x: a)
@@ -106,7 +121,7 @@ class ViewController: UIViewController {
                 b = 0
                 a += 1
             } //end else
-            print(i.titleLabel?.text as Any)
+            //print(i.titleLabel?.text as Any)
         } // end for
 
         for i in buttons {

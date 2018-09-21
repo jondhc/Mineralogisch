@@ -477,6 +477,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="statusLabel" destination="3Eq-js-afH" id="rGS-0r-GQF"/>
                         <outletCollection property="buttons" destination="1Y1-qb-cb6" collectionClass="NSMutableArray" id="0jZ-yW-4jR"/>
                         <outletCollection property="buttons" destination="Qgk-W4-H2f" collectionClass="NSMutableArray" id="9Io-RP-Jtp"/>
                         <outletCollection property="buttons" destination="xR8-Qf-0qJ" collectionClass="NSMutableArray" id="KKY-rq-b7E"/>

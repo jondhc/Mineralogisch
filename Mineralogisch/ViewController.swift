@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBAction func startButton(_: UIButton) {
+        for i in 0...5{
+            for j in 0...5{
+                tablero[i][j] = 0
+            }
+        }
         statusLabel.text=""
         for i in buttons{
             i.isEnabled = true
@@ -38,6 +43,7 @@ class ViewController: UIViewController {
                 } //end for
             } //end for
         } // end for
+        print(tablero)
     } // startButton
 
     @IBAction func boardButton(_ sender: Button) {

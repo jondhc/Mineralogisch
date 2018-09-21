@@ -91,10 +91,17 @@ class ViewController: UIViewController {
                 } //end for
             } //end for
         } // end for
+        
+        for i in 0...5 {
+            for j in 0...5 {
+                print("\(tablero[i][j])", terminator: " ")
+            }
+            print( " ")
+        }
     } // startButton
 
     @IBAction func boardButton(_ sender: Button) {
-        sender.isEnabled=false
+        sender.isEnabled = false
         var a, b: Int
 
         a = sender.getX()
@@ -104,7 +111,7 @@ class ViewController: UIViewController {
         print(tablero[a][b])
         sender.setTitle(("\(tablero[a][b])"), for: UIControlState.normal)
         sender.setTitleColor(UIColor.black, for: UIControlState.normal)
-        if tablero[a][b] == 9 {
+        if tablero[a][b] == 9 {                     //Si el jugador presiona una mina
             statusLabel.text = "LOSER!"
             pause()
             for i in buttons{
@@ -114,10 +121,17 @@ class ViewController: UIViewController {
                 } //end if
             } //end for
         } //end if
-        else if tablero[a][b] == 0 {
-            contador = contador+1
+        else {                                      //Si el jugador NO presiona una mina
+            contador += 1
             pointsLabel.text = "Points: \(contador!)"
-            if contador == 32{
+            if tablero[a][b] == 0 {                             //Si es un cero
+                eliminarCeros(x: a, y: b)
+            } //end else if
+            else {                                              //Si no es un cero
+                print("\(tablero[a][b])")
+            } // end else
+            
+            if contador == 32{                      //Checar victoria al final del presionado del boton
                 statusLabel.text = "WINNER!"
                 pause()
                 for i in buttons{
@@ -127,40 +141,27 @@ class ViewController: UIViewController {
                     } //end if
                 } //end for
             } //end if
-            //eliminarCeros(x: a, y: b, button: sender)
-        } //end else if
-        else {
-            print("\(tablero[a][b])")
-            contador = contador+1
-            pointsLabel.text = "Points: \(contador!)"
-            if contador == 32{
-                statusLabel.text = "WINNER!"
-                pause()
-                for i in buttons{
-                    i.isEnabled = false
-                    if(tablero[i.getX()][i.getY()] == 9){
-                        i.setTitle("💣", for: UIControlState.normal)
-                    } //end if
-                } //end for
-            } //end if
-        } // end else
+        }
     } // end boardbutton
 
-    func eliminarCeros(x: Int, y: Int, button: Button) {
+    func eliminarCeros(x: Int, y: Int) {
         for i in x - 1 ... x + 1 {
             for j in y - 1 ... y + 1 {
                 if i >= 0 && j >= 0 && i < 6 && j < 6 && (i != x || j != y) {
                     if tablero[i][j] >= 0 && tablero[i][j] < 9 {
-                        button.isEnabled = false
-                        if tablero[i][j] == 0 {
-                            //button.setTitle("", for: UIControlState.normal)
-                        } //end if
-                        else {
-                            // El boton tendra su correspondiente numero
-                        } //end else
+                        for b in buttons {
+                            if (b.getX() == i) && (b.getY() == j) {
+                                if b.isEnabled == true {
+                                    contador += 1
+                                    b.isEnabled = false
+                                    pointsLabel.text = "Points: \(contador!)"
+                                }
+                                b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
+                            }
+                        }
                     } //end if
                     if tablero[i][j] == 0 {
-                        eliminarCeros(x: i, y: j, button: button)
+                        //eliminarCeros(x: i, y: j)
                     } //end if
                 } //end if
             } //end for
@@ -190,6 +191,7 @@ class ViewController: UIViewController {
         statusLabel.text="Press the start button"
 
         for i in buttons {
+            i.isEnabled = false
             i.setX(x: a)
             i.setY(y: b)
             if b < 5 {
@@ -199,16 +201,19 @@ class ViewController: UIViewController {
                 b = 0
                 a += 1
             } //end else
-            //print(i.titleLabel?.text as Any)
+
         } // end for
 
         for i in buttons {
             print(i.getX(), terminator: "-")
             print(i.getY())
         } //end for
+        
     } // end viewDidLoad
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
     } // end didReceiveMemoryWarning
+    
 } // end ViewController

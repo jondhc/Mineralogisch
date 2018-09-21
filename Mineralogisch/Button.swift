@@ -11,20 +11,20 @@ import UIKit
 class Button: UIButton {
     var x: Int!
     var y: Int!
-    
+
     public func getX() -> Int {
         return x
-    } //end getX
-    
+    } // end getX
+
     public func getY() -> Int {
         return y
-    } //end getY
-    
+    } // end getY
+
     public func setX(x: Int) {
         self.x = x
-    }//end setX
-    
+    } // end setX
+
     public func setY(y: Int) {
         self.y = y
-    }//end setY
+    } // end setY
 }

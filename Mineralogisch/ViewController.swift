@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         resetTimer()
         runTimer()
         for i in buttons{
-            i.setTitleColor(UIColor.black, for: UIControlState.normal)
+            i.setTitleColor(UIColor.white, for: UIControlState.normal)
         }
         contador = 0
         pointsLabel.text = "Points: \(100/32*contador!)"

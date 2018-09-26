@@ -160,7 +160,12 @@ class ViewController: UIViewController {
                                         pointsLabel.text = "Points: \(100/32*contador!)"
                                         checar[i][j] = 1
                                     }
-                                    b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
+                                    if tablero[i][j] == 0 {
+                                        b.setTitle(" ", for: UIControlState.normal)
+                                    }
+                                    else {
+                                        b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
+                                    }
                                 }
                             }
                         } //end if
@@ -217,13 +222,12 @@ class ViewController: UIViewController {
     } // end viewDidLoad
     
     @IBAction func toggleFlag(_ sender: UILongPressGestureRecognizer) {
-        
-//        if((sender as! UIButton).titleLabel?.text == "🚩"){
-//            (sender as! UIButton).titleLabel?.text = "-"
-//        } //end if
-//        else{
-//            (sender as! UIButton).titleLabel?.text = "🚩"
-//        } //end else
+        if((sender.view as! UIButton).titleLabel?.text == "🚩"){
+            (sender.view as! UIButton).titleLabel?.text = "-"
+        } //end if
+        else{
+            (sender.view as! UIButton).titleLabel?.text = "🚩"
+        } //end else
     } //end toggleFlag
     
 

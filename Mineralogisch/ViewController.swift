@@ -155,23 +155,16 @@ class ViewController: UIViewController {
             } //end for
         } //end if
         else {                                      //Si el jugador NO presiona una mina
-            changeColor(x: a, y: b)
             contador += 1
             pointsLabel.text = "Points: \(100/32*contador!)"
             checar[a][b] = 1
-            for i in 0...5 {
-                for j in 0...5 {
-                    print("\(checar[i][j])", terminator: " ")
-                }
-                print( " ")
-            }
             if tablero[a][b] == 0 {                             //Si es un cero
                 sender.setTitle(" ", for: UIControlState.normal)
                 eliminarCeros(x: a, y: b)
             } //end else if
             else {                                              //Si no es un cero
+                changeColor(x: a, y: b)
                 sender.setTitle(("\(tablero[a][b])"), for: UIControlState.normal)
-                print("\(tablero[a][b])")
             } // end else
             
             if contador == 32{                      //Checar victoria al final del presionado del boton

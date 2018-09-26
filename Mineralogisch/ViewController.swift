@@ -126,6 +126,7 @@ class ViewController: UIViewController {
             contador += 1
             pointsLabel.text = "Points: \(100/32*contador!)"
             if tablero[a][b] == 0 {                             //Si es un cero
+                sender.setTitle(" ", for: UIControlState.normal)
                 eliminarCeros(x: a, y: b)
             } //end else if
             else {                                              //Si no es un cero

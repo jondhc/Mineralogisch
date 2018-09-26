@@ -53,49 +53,61 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y1-qb-cb6" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ebl-0X-HtK"/>
+                                                            <outletCollection property="gestureRecognizers" destination="RBd-or-ey3" appends="YES" id="VWN-Ib-m6W"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgk-W4-H2f" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yhS-AU-voa"/>
+                                                            <outletCollection property="gestureRecognizers" destination="dEQ-DP-Tyd" appends="YES" id="oXB-JY-5eH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR8-Qf-0qJ" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9M9-aG-PBW"/>
+                                                            <outletCollection property="gestureRecognizers" destination="9gr-K3-SNl" appends="YES" id="MOL-W4-m7M"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-xS-DYa" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R1I-KK-jVs"/>
+                                                            <outletCollection property="gestureRecognizers" destination="xSq-Ja-OVN" appends="YES" id="S2p-5c-LUA"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgW-sh-GTO" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryW-iJ-eSi"/>
+                                                            <outletCollection property="gestureRecognizers" destination="lLI-PK-Dhb" appends="YES" id="6pa-em-NaR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utg-qx-QVo" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxl-yc-ofS"/>
+                                                            <outletCollection property="gestureRecognizers" destination="qf7-Mk-y7B" appends="YES" id="7rA-pD-QEz"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -118,49 +130,61 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-tF-EBw" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0MB-Ai-I9S"/>
+                                                            <outletCollection property="gestureRecognizers" destination="zQW-FP-s0D" appends="YES" id="Ztj-kR-8FO"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skD-lv-xHi" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Axt-fL-xsd"/>
+                                                            <outletCollection property="gestureRecognizers" destination="iOY-1d-Pcj" appends="YES" id="UIg-8y-CIH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-ym-lkQ" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVj-mE-cFj"/>
+                                                            <outletCollection property="gestureRecognizers" destination="lIb-1r-63s" appends="YES" id="RdD-in-Ita"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CU-z6-nwj" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FOO-Ik-5Ie"/>
+                                                            <outletCollection property="gestureRecognizers" destination="bMh-WN-yD9" appends="YES" id="ceA-9S-LFK"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRp-jR-azf" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI0-wI-Ogd"/>
+                                                            <outletCollection property="gestureRecognizers" destination="Ue5-Gd-9kS" appends="YES" id="G2i-gN-Rn1"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2r-cX-RU0" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EBs-QQ-Edy"/>
+                                                            <outletCollection property="gestureRecognizers" destination="M9b-NN-jL8" appends="YES" id="SIL-Wc-KSe"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -183,49 +207,61 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5G8-On-xEv" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcw-Af-WUG"/>
+                                                            <outletCollection property="gestureRecognizers" destination="TAI-bP-eKL" appends="YES" id="IBd-ex-osC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGi-Lq-f7E" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Upg-Pz-fuc"/>
+                                                            <outletCollection property="gestureRecognizers" destination="3lC-e6-vj9" appends="YES" id="8Uk-ca-rmx"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4iC-al-Nz5" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rNc-eX-9wt"/>
+                                                            <outletCollection property="gestureRecognizers" destination="CEY-sg-dMj" appends="YES" id="yX9-vu-Bme"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uam-oY-3yY" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XE3-hY-fHy"/>
+                                                            <outletCollection property="gestureRecognizers" destination="mMy-Zc-pcO" appends="YES" id="YIa-3M-0NH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-it-YEe" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCB-tE-UWE"/>
+                                                            <outletCollection property="gestureRecognizers" destination="qLS-zh-IJC" appends="YES" id="g3o-mx-eLC"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXw-Sx-2DD" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0J-W8-Cb0"/>
+                                                            <outletCollection property="gestureRecognizers" destination="h5a-Ft-7dX" appends="YES" id="8bF-0K-MTf"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -248,49 +284,61 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypw-hD-Bak" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovA-7S-eJA"/>
+                                                            <outletCollection property="gestureRecognizers" destination="eor-Sw-w55" appends="YES" id="s7Z-Kg-SUZ"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mel-ys-OET" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lmX-vv-buM"/>
+                                                            <outletCollection property="gestureRecognizers" destination="Dx3-cF-l8M" appends="YES" id="xUe-PN-FU0"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRG-if-gcG" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hp-Fy-hNH"/>
+                                                            <outletCollection property="gestureRecognizers" destination="rGf-ni-rWg" appends="YES" id="jZJ-pQ-acd"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZn-dK-xBH" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P2T-ks-oDn"/>
+                                                            <outletCollection property="gestureRecognizers" destination="SeO-w8-B4Q" appends="YES" id="NJG-io-afm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1i7-Lh-8xh" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pt8-a0-FSl"/>
+                                                            <outletCollection property="gestureRecognizers" destination="P36-tx-iCa" appends="YES" id="law-2T-iS8"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMb-Bt-wl5" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eXG-bx-5JZ"/>
+                                                            <outletCollection property="gestureRecognizers" destination="pR0-7W-bgd" appends="YES" id="c8P-GV-JHw"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -313,49 +361,61 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iep-J3-hrv" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOv-S0-KYe"/>
+                                                            <outletCollection property="gestureRecognizers" destination="ezz-nP-V1J" appends="YES" id="RGi-bO-tvI"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYr-L9-1li" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HLZ-m3-gJj"/>
+                                                            <outletCollection property="gestureRecognizers" destination="f8P-t1-VAd" appends="YES" id="xuR-ze-Zzp"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ri-zQ-m4d" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOQ-0A-Lte"/>
+                                                            <outletCollection property="gestureRecognizers" destination="TMn-UO-Xce" appends="YES" id="p1e-kq-4RR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPm-ns-11i" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eEr-f2-3cz"/>
+                                                            <outletCollection property="gestureRecognizers" destination="fz7-PJ-h0q" appends="YES" id="YJ7-xP-MhE"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5y-hO-RMm" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGi-lV-pN6"/>
+                                                            <outletCollection property="gestureRecognizers" destination="O71-i7-WZs" appends="YES" id="kTv-HV-S0a"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTb-Ic-heD" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ltz-KP-f5j"/>
+                                                            <outletCollection property="gestureRecognizers" destination="xN5-8D-lXb" appends="YES" id="g4Z-Wh-eA3"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -378,49 +438,61 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1g-Bk-H1V" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r6R-DQ-rnp"/>
+                                                            <outletCollection property="gestureRecognizers" destination="AEb-1e-yVh" appends="YES" id="JrJ-xb-UMo"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTe-rE-Ll1" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0U4-rR-Iqj"/>
+                                                            <outletCollection property="gestureRecognizers" destination="TD1-KT-ux4" appends="YES" id="QzQ-vb-LkG"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Cp-af-lV3" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Juy-lh-TeV"/>
+                                                            <outletCollection property="gestureRecognizers" destination="O2z-de-wdv" appends="YES" id="04p-sz-7QD"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncI-VG-AfM" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLU-0N-yJs"/>
+                                                            <outletCollection property="gestureRecognizers" destination="XVd-pZ-JYh" appends="YES" id="lMl-t5-8xl"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84z-06-irq" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y6V-QX-d5e"/>
+                                                            <outletCollection property="gestureRecognizers" destination="tLt-uC-oeg" appends="YES" id="sMe-42-tdH"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDX-d8-iyG" customClass="Button" customModule="Mineralogisch" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="30"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <gestureRecognizers/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="boardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deu-rb-OyU"/>
+                                                            <outletCollection property="gestureRecognizers" destination="uPN-Cp-RmO" appends="YES" id="XpU-Xe-adi"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -519,6 +591,186 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="RBd-or-ey3">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="rYY-g3-BNI"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="dEQ-DP-Tyd">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="DwP-vx-QYA"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="9gr-K3-SNl">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="l7M-57-N4r"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xSq-Ja-OVN">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="1zZ-6s-53q"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lLI-PK-Dhb">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="Cgd-JO-bLP"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="qf7-Mk-y7B">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="5ed-lQ-FnO"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="zQW-FP-s0D">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="zRa-jy-E4U"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="iOY-1d-Pcj">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="Zcr-JK-w80"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="lIb-1r-63s">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="ipf-KG-rnN"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="bMh-WN-yD9">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="p9C-Jw-GxL"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Ue5-Gd-9kS">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="MfT-SP-CLB"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="M9b-NN-jL8">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="TN9-ev-32J"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="h5a-Ft-7dX">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="uRg-et-C2s"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="pR0-7W-bgd">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="Hh6-cP-XnV"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xN5-8D-lXb">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="3tG-lm-DiO"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="uPN-Cp-RmO">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="muC-wx-j6Y"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="tLt-uC-oeg">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="Zrw-hp-oSi"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="XVd-pZ-JYh">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="YZi-8K-FSa"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="O2z-de-wdv">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="RjR-dc-8Jl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="TD1-KT-ux4">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="WLO-fh-tdr"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="AEb-1e-yVh">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="jgm-eD-T9N"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="ezz-nP-V1J">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="aK8-Xo-T2T"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="eor-Sw-w55">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="HiA-2e-ED8"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="TAI-bP-eKL">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="ehc-K8-g9Q"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="3lC-e6-vj9">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="FUV-kD-p33"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Dx3-cF-l8M">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="5Zl-56-ZQt"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="f8P-t1-VAd">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="9Yn-rl-DmM"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="TMn-UO-Xce">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="C62-Bs-3Zs"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="fz7-PJ-h0q">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="ucg-sA-4vX"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="O71-i7-WZs">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="ofu-Md-AFF"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="P36-tx-iCa">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="Kxy-h4-vps"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="SeO-w8-B4Q">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="YzZ-ke-FvS"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="rGf-ni-rWg">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="gAt-f4-wzl"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="CEY-sg-dMj">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="RC2-kQ-V5B"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="mMy-Zc-pcO">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="eYk-Q1-glC"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="qLS-zh-IJC">
+                    <connections>
+                        <action selector="toggleFlag:" destination="BYZ-38-t0r" id="grm-cP-733"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
         </scene>
     </scenes>

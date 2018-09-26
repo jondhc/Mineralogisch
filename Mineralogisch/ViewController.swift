@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     var tablero: [[Int]] = Array(repeating: Array(repeating: 0, count: 6), count: 6)
+    var checar: [[Int]] = Array(repeating: Array(repeating: 0, count: 6), count: 6)
     var filaAleatoria: Int!
     var coluAleatoria: Int!
     var contador: Int! = 0
@@ -148,22 +149,25 @@ class ViewController: UIViewController {
         for i in x - 1 ... x + 1 {
             for j in y - 1 ... y + 1 {
                 if i >= 0 && j >= 0 && i < 6 && j < 6 && (i != x || j != y) {
-                    if tablero[i][j] >= 0 && tablero[i][j] < 9 {
-                        for b in buttons {
-                            if (b.getX() == i) && (b.getY() == j) {
-                                if b.isEnabled == true {
-                                    contador += 1
-                                    b.isEnabled = false
-                                    b.setTitleColor(UIColor.black, for: UIControlState.normal)
-                                    pointsLabel.text = "Points: \(100/32*contador!)"
+                    if checar[i][j] == 0 {
+                        if tablero[i][j] >= 0 && tablero[i][j] < 9 {
+                            for b in buttons {
+                                if (b.getX() == i) && (b.getY() == j) {
+                                    if b.isEnabled == true {
+                                        contador += 1
+                                        b.isEnabled = false
+                                        b.setTitleColor(UIColor.black, for: UIControlState.normal)
+                                        pointsLabel.text = "Points: \(100/32*contador!)"
+                                        checar[i][j] = 1
+                                    }
+                                    b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
                                 }
-                                b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
                             }
-                        }
-                    } //end if
-                    if tablero[i][j] == 0 {
-                        //eliminarCeros(x: i, y: j)
-                    } //end if
+                        } //end if
+                        if tablero[i][j] == 0 {
+                            eliminarCeros(x: i, y: j)
+                        } //end if
+                    }
                 } //end if
             } //end for
         } //end for
@@ -211,6 +215,17 @@ class ViewController: UIViewController {
         } //end for
         
     } // end viewDidLoad
+    
+    @IBAction func toggleFlag(_ sender: UILongPressGestureRecognizer) {
+        
+//        if((sender as! UIButton).titleLabel?.text == "🚩"){
+//            (sender as! UIButton).titleLabel?.text = "-"
+//        } //end if
+//        else{
+//            (sender as! UIButton).titleLabel?.text = "🚩"
+//        } //end else
+    } //end toggleFlag
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

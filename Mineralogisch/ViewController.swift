@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         resetTimer()
         runTimer()
         for i in buttons{
-            i.setTitleColor(UIColor.blue, for: UIControlState.normal)
+            i.setTitleColor(UIColor.black, for: UIControlState.normal)
         }
         contador = 0
         pointsLabel.text = "Points: \(contador!)"
@@ -154,6 +154,7 @@ class ViewController: UIViewController {
                                 if b.isEnabled == true {
                                     contador += 1
                                     b.isEnabled = false
+                                    b.setTitleColor(UIColor.black, for: UIControlState.normal)
                                     pointsLabel.text = "Points: \(contador!)"
                                 }
                                 b.setTitle("\(tablero[i][j])", for: UIControlState.normal)

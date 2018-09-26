@@ -94,6 +94,7 @@ class ViewController: UIViewController {
         for i in 0...5{
             for j in 0...5{
                 tablero[i][j] = 0
+                checar[i][j] = 0
             }
         }
         statusLabel.text=""
@@ -124,6 +125,13 @@ class ViewController: UIViewController {
             }
             print( " ")
         }
+        print("Matriz checar")
+        for i in 0...5 {
+            for j in 0...5 {
+                print("\(checar[i][j])", terminator: " ")
+            }
+            print( " ")
+        }
     } // startButton
 
     @IBAction func boardButton(_ sender: Button) {
@@ -135,8 +143,7 @@ class ViewController: UIViewController {
 
         print(a, b)
         print(tablero[a][b])
-        sender.setTitle(("\(tablero[a][b])"), for: UIControlState.normal)
-        sender.setTitleColor(UIColor.black, for: UIControlState.normal)
+        //sender.setTitleColor(UIColor.black, for: UIControlState.normal)
         if tablero[a][b] == 9 {                     //Si el jugador presiona una mina
             statusLabel.text = "LOSER!"
             pause()
@@ -151,11 +158,19 @@ class ViewController: UIViewController {
             changeColor(x: a, y: b)
             contador += 1
             pointsLabel.text = "Points: \(100/32*contador!)"
+            checar[a][b] = 1
+            for i in 0...5 {
+                for j in 0...5 {
+                    print("\(checar[i][j])", terminator: " ")
+                }
+                print( " ")
+            }
             if tablero[a][b] == 0 {                             //Si es un cero
                 sender.setTitle(" ", for: UIControlState.normal)
                 eliminarCeros(x: a, y: b)
             } //end else if
             else {                                              //Si no es un cero
+                sender.setTitle(("\(tablero[a][b])"), for: UIControlState.normal)
                 print("\(tablero[a][b])")
             } // end else
             
@@ -251,11 +266,14 @@ class ViewController: UIViewController {
     
     @IBAction func toggleFlag(_ sender: UILongPressGestureRecognizer) {
         if((sender.view as! UIButton).titleLabel?.text == "🚩"){
-            (sender.view as! UIButton).setTitle("-", for: UIControlState.normal)
+            (sender.view as! UIButton).setTitle("❔", for: UIControlState.normal)
         } //end if
+        else if ((sender.view as! UIButton).titleLabel?.text == "❔"){
+            (sender.view as! UIButton).setTitle("-", for: UIControlState.normal)
+        } //end else-if
         else{
             (sender.view as! UIButton).setTitle("🚩", for: UIControlState.normal)
-        } //end else
+        }
     } //end toggleFlag
     
 

@@ -58,6 +58,31 @@ class ViewController: UIViewController {
         timer.text = "Time: \(timeString(time: TimeInterval(seconds)))"
     }
     
+    func changeColor(x: Int, y: Int){
+        var color: UIColor
+        switch(tablero[x][y]){
+        case 1:
+            color = UIColor.yellow
+            break
+        case 2:
+            color = UIColor.green
+            break
+        case 3:
+            color = UIColor.red
+            break
+        case 4:
+            color = UIColor.purple
+        default:
+            color = UIColor.magenta
+            break
+        } //end switch
+        for i in buttons{
+            if(x == i.getX() && y==i.getY()){
+                    i.setTitleColor(color, for: UIControlState.normal)
+            } //end if
+        } //end for
+    } //end changeColor
+    
     @IBAction func startButton(_: UIButton) {
         resetTimer()
         runTimer()
@@ -123,6 +148,7 @@ class ViewController: UIViewController {
             } //end for
         } //end if
         else {                                      //Si el jugador NO presiona una mina
+            changeColor(x: a, y: b)
             contador += 1
             pointsLabel.text = "Points: \(100/32*contador!)"
             if tablero[a][b] == 0 {                             //Si es un cero
@@ -166,6 +192,7 @@ class ViewController: UIViewController {
                                     }
                                     else {
                                         b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
+                                        changeColor(x: i, y: j)
                                     }
                                 }
                             }

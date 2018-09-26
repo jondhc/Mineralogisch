@@ -223,10 +223,10 @@ class ViewController: UIViewController {
     
     @IBAction func toggleFlag(_ sender: UILongPressGestureRecognizer) {
         if((sender.view as! UIButton).titleLabel?.text == "🚩"){
-            (sender.view as! UIButton).titleLabel?.text = "-"
+            (sender.view as! UIButton).setTitle("-", for: UIControlState.normal)
         } //end if
         else{
-            (sender.view as! UIButton).titleLabel?.text = "🚩"
+            (sender.view as! UIButton).setTitle("🚩", for: UIControlState.normal)
         } //end else
     } //end toggleFlag
     

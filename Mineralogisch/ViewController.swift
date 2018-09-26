@@ -64,7 +64,7 @@ class ViewController: UIViewController {
             i.setTitleColor(UIColor.black, for: UIControlState.normal)
         }
         contador = 0
-        pointsLabel.text = "Points: \(contador!)"
+        pointsLabel.text = "Points: \(100/32*contador!)"
         for i in 0...5{
             for j in 0...5{
                 tablero[i][j] = 0
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
         } //end if
         else {                                      //Si el jugador NO presiona una mina
             contador += 1
-            pointsLabel.text = "Points: \(contador!)"
+            pointsLabel.text = "Points: \(100/32*contador!)"
             if tablero[a][b] == 0 {                             //Si es un cero
                 eliminarCeros(x: a, y: b)
             } //end else if
@@ -155,7 +155,7 @@ class ViewController: UIViewController {
                                     contador += 1
                                     b.isEnabled = false
                                     b.setTitleColor(UIColor.black, for: UIControlState.normal)
-                                    pointsLabel.text = "Points: \(contador!)"
+                                    pointsLabel.text = "Points: \(100/32*contador!)"
                                 }
                                 b.setTitle("\(tablero[i][j])", for: UIControlState.normal)
                             }

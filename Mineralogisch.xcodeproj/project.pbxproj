@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0926B1DC2161C90A00DDFCB8 /* winner.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0926B1D92161C90A00DDFCB8 /* winner.mpeg */; };
+		0926B1DD2161C90A00DDFCB8 /* start.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0926B1DA2161C90A00DDFCB8 /* start.mpeg */; };
+		0926B1DE2161C90A00DDFCB8 /* bomb.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0926B1DB2161C90A00DDFCB8 /* bomb.mpeg */; };
+		0926B1E12161CFE000DDFCB8 /* beep.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 0926B1E02161CFE000DDFCB8 /* beep.aiff */; };
 		09B23670215317A3007009E3 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B2366F215317A3007009E3 /* Button.swift */; };
 		09FC0816214E2CFA0046D9A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC0815214E2CFA0046D9A2 /* AppDelegate.swift */; };
 		09FC0818214E2CFA0046D9A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FC0817214E2CFA0046D9A2 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0926B1D92161C90A00DDFCB8 /* winner.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = winner.mpeg; sourceTree = "<group>"; };
+		0926B1DA2161C90A00DDFCB8 /* start.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = start.mpeg; sourceTree = "<group>"; };
+		0926B1DB2161C90A00DDFCB8 /* bomb.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = bomb.mpeg; sourceTree = "<group>"; };
+		0926B1E02161CFE000DDFCB8 /* beep.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = beep.aiff; sourceTree = "<group>"; };
 		09B2366F215317A3007009E3 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		09FC0812214E2CFA0046D9A2 /* Mineralogisch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mineralogisch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09FC0815214E2CFA0046D9A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +64,10 @@
 		09FC0814214E2CFA0046D9A2 /* Mineralogisch */ = {
 			isa = PBXGroup;
 			children = (
+				0926B1DB2161C90A00DDFCB8 /* bomb.mpeg */,
+				0926B1DA2161C90A00DDFCB8 /* start.mpeg */,
+				0926B1D92161C90A00DDFCB8 /* winner.mpeg */,
+				0926B1E02161CFE000DDFCB8 /* beep.aiff */,
 				09FC0815214E2CFA0046D9A2 /* AppDelegate.swift */,
 				09FC0817214E2CFA0046D9A2 /* ViewController.swift */,
 				09FC0819214E2CFA0046D9A2 /* Main.storyboard */,
@@ -125,8 +137,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0926B1E12161CFE000DDFCB8 /* beep.aiff in Resources */,
+				0926B1DD2161C90A00DDFCB8 /* start.mpeg in Resources */,
 				09FC0820214E2CFB0046D9A2 /* LaunchScreen.storyboard in Resources */,
 				09FC081D214E2CFB0046D9A2 /* Assets.xcassets in Resources */,
+				0926B1DE2161C90A00DDFCB8 /* bomb.mpeg in Resources */,
+				0926B1DC2161C90A00DDFCB8 /* winner.mpeg in Resources */,
 				09FC081B214E2CFA0046D9A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
+    
+    var player: AVAudioPlayer?
     var tablero: [[Int]] = Array(repeating: Array(repeating: 0, count: 6), count: 6)
     var checar: [[Int]] = Array(repeating: Array(repeating: 0, count: 6), count: 6)
     var filaAleatoria: Int!
@@ -24,6 +27,50 @@ class ViewController: UIViewController {
     @IBOutlet weak var timer: UILabel!
     @IBOutlet var buttons: [Button]!
     @IBOutlet weak var statusLabel: UILabel!
+    
+    func playSound(sound: String) {
+        guard let url = Bundle.main.url(forResource: sound, withExtension: "mpeg") else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            /// this codes for making this app ready to takeover the device audio
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            /// change fileTypeHint according to the type of your audio file (you can omit this)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
+            player!.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
+        }
+    }
+    
+    func playButtonSound() {
+        guard let url = Bundle.main.url(forResource: "beep", withExtension: "aiff") else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            /// this codes for making this app ready to takeover the device audio
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            /// change fileTypeHint according to the type of your audio file (you can omit this)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.aiff.rawValue)
+            
+            // no need for prepareToPlay because prepareToPlay is happen automatically when calling play()
+            player!.play()
+        } catch let error as NSError {
+            print("error: \(error.localizedDescription)")
+        }
+    }
     
     func pause (){
         if self.resumeTapped == false{
@@ -84,6 +131,7 @@ class ViewController: UIViewController {
     } //end changeColor
     
     @IBAction func startButton(_: UIButton) {
+        playSound(sound: "start")
         resetTimer()
         runTimer()
         for i in buttons{
@@ -135,6 +183,7 @@ class ViewController: UIViewController {
     } // startButton
 
     @IBAction func boardButton(_ sender: Button) {
+        playButtonSound()
         sender.isEnabled = false
         var a, b: Int
 
@@ -146,6 +195,7 @@ class ViewController: UIViewController {
         //sender.setTitleColor(UIColor.black, for: UIControlState.normal)
         if tablero[a][b] == 9 {                     //Si el jugador presiona una mina
             statusLabel.text = "LOSER!"
+            playSound(sound: "bomb")
             pause()
             for i in buttons{
                 i.isEnabled = false
@@ -169,6 +219,7 @@ class ViewController: UIViewController {
             
             if contador == 32{                      //Checar victoria al final del presionado del boton
                 statusLabel.text = "WINNER!"
+                playSound(sound: "winner")
                 pause()
                 for i in buttons{
                     i.isEnabled = false
